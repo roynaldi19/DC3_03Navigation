@@ -1,10 +1,10 @@
 package com.roynaldi19.bfaa03_01navigation
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.roynaldi19.bfaa03_01navigation.databinding.FragmentCategoryBinding
 
@@ -33,12 +33,13 @@ class CategoryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnCategoryLifestyle.setOnClickListener { view ->
-            val bundle = Bundle()
-            bundle.putString(EXTRA_NAME, "LifeStyle")
-            bundle.putLong(EXTRA_STOCK, 7)
-            view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment, bundle)
+            val toDetailCategoryFragment =
+                CategoryFragmentDirections.actionCategoryFragmentToDetailCategoryFragment()
+            toDetailCategoryFragment.name = "LifeStyle"
+            toDetailCategoryFragment.stock = 7
+            view.findNavController()
+                .navigate(toDetailCategoryFragment)
         }
-
 
     }
 
