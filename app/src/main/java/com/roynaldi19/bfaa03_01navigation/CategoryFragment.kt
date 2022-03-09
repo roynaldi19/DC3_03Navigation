@@ -10,7 +10,6 @@ import com.roynaldi19.bfaa03_01navigation.databinding.FragmentCategoryBinding
 
 
 class CategoryFragment : Fragment() {
-
     private var _binding: FragmentCategoryBinding? = null
     private val binding get() = _binding!!
 
@@ -23,10 +22,8 @@ class CategoryFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         _binding = FragmentCategoryBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -40,12 +37,10 @@ class CategoryFragment : Fragment() {
             view.findNavController()
                 .navigate(toDetailCategoryFragment)
         }
-
     }
 
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
     }
-
 }
