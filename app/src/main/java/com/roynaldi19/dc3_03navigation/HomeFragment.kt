@@ -1,4 +1,4 @@
-package com.roynaldi19.bfaa03_01navigation
+package com.roynaldi19.dc3_03navigation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import com.roynaldi19.bfaa03_01navigation.databinding.FragmentHomeBinding
+import com.roynaldi19.dc3_03navigation.databinding.FragmentHomeBinding
 
 
 class HomeFragment : Fragment() {

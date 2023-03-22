@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.roynaldi19.bfaa03_01navigation.HomeFragment"
+        android:name="com.roynaldi19.dc3_03navigation.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/categoryFragment"
-        android:name="com.roynaldi19.bfaa03_01navigation.CategoryFragment"
+        android:name="com.roynaldi19.dc3_03navigation.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" >
         <action
@@ -32,7 +32,7 @@
     </fragment>
     <activity
         android:id="@+id/profileActivity"
-        android:name="com.roynaldi19.bfaa03_01navigation.ProfileActivity"
+        android:name="com.roynaldi19.dc3_03navigation.ProfileActivity"
         android:label="activity_profile"
         tools:layout="@layout/activity_profile">
         <deepLink
@@ -41,7 +41,7 @@
     </activity>
     <fragment
         android:id="@+id/detailCategoryFragment"
-        android:name="com.roynaldi19.bfaa03_01navigation.DetailCategoryFragment"
+        android:name="com.roynaldi19.dc3_03navigation.DetailCategoryFragment"
         android:label="fragment_detail_category"
         tools:layout="@layout/fragment_detail_category">
         <argument

@@ -1,4 +1,4 @@
-package com.roynaldi19.bfaa03_01navigation
+package com.roynaldi19.dc3_03navigation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import com.roynaldi19.bfaa03_01navigation.databinding.FragmentDetailCategoryBinding
+import com.roynaldi19.dc3_03navigation.databinding.FragmentDetailCategoryBinding
 
 
 class DetailCategoryFragment : Fragment() {
