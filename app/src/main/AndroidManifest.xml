@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BFAA03_01Navigation">
-        <activity android:name="com.roynaldi19.dc3_03navigation.ProfileActivity" />
         <activity
             android:name="com.roynaldi19.dc3_03navigation.MainActivity"
             android:exported="true">
@@ -18,7 +17,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <nav-graph android:value="@navigation/main_navigation" />
         </activity>
     </application>
 
