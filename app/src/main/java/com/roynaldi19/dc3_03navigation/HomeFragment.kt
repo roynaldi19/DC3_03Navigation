@@ -9,7 +9,6 @@ import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.roynaldi19.dc3_03navigation.databinding.FragmentHomeBinding
 
-
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
@@ -29,7 +28,6 @@ class HomeFragment : Fragment() {
         )
         binding.btnProfile.setOnClickListener {view ->
             view.findNavController().navigate(R.id.action_homeFragment_to_profileActivity)
-
         }
     }
 
@@ -37,6 +35,4 @@ class HomeFragment : Fragment() {
         super.onDestroy()
         _binding = null
     }
-
-
 }
