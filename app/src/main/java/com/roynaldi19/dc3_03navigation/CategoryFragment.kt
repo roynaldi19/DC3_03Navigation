@@ -30,10 +30,18 @@ class CategoryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnCategoryLifestyle.setOnClickListener { view->
-            val bundle = Bundle()
-            bundle.putString(EXTRA_NAME, "Lifestyle")
-            bundle.putLong(EXTRA_STOCK, 7)
-            view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment, bundle)
+
+//            //pengiriman dengan bundle
+//            val bundle = Bundle()
+//            bundle.putString(EXTRA_NAME, "Lifestyle")
+//            bundle.putLong(EXTRA_STOCK, 7)
+//            view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment, bundle)
+
+            //pengriman dengan safeAergs
+            val toDetailCategoryFragment = CategoryFragmentDirections.actionCategoryFragmentToDetailCategoryFragment()
+            toDetailCategoryFragment.name = "LifeStyle"
+            toDetailCategoryFragment.stock = 7
+            view.findNavController().navigate(toDetailCategoryFragment)
         }
     }
 
